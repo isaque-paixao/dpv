@@ -774,12 +774,12 @@ em {
 }
 
 .plan__head {
-  background: var(--muted);
+  background: var(--coral);
   padding: 22px clamp(24px, 3vw, 40px);
 }
 
 .plan--plus .plan__head {
-  background: var(--teal);
+  background: var(--ink);
 }
 
 .plan__name {
@@ -815,8 +815,8 @@ em {
 .plan__tag {
   padding: 3px 10px;
   border-radius: 999px;
-  background: rgba(42, 86, 85, .12);
-  color: var(--teal);
+  background: var(--peach-light);
+  color: var(--ink);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: .04em;
@@ -840,7 +840,7 @@ em {
   content: "→";
   position: absolute;
   left: 0;
-  color: var(--teal);
+  color: var(--coral);
 }
 
 .plan__list .plan__extra::before {
@@ -882,14 +882,6 @@ em {
   font-size: 17px;
   padding: 18px 24px;
   border-radius: 12px;
-}
-
-.plan__btn {
-  background: var(--muted);
-}
-
-.plan__btn:hover {
-  background: var(--body-text);
 }
 
 .plan--plus .plan__btn {
