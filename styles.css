@@ -518,6 +518,51 @@ em {
   border-top: 1px solid rgba(42, 86, 85, .08);
 }
 
+.modules__extra-label {
+  margin: 16px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--coral);
+}
+
+.module--extra {
+  background: #FFFFFF;
+  border: 1px dashed var(--coral);
+}
+
+.module--extra .module__num {
+  align-self: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--coral);
+  color: #FFFFFF;
+  font-family: 'Archivo', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.module--extra .lesson {
+  padding-left: 0;
+}
+
+.lesson-group {
+  margin: 12px 0 0;
+  padding: 9px 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.lesson-group:first-child {
+  margin-top: 0;
+}
+
 .content__media {
   flex: 1 1 340px;
   min-width: 280px;
