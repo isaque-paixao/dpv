@@ -1157,3 +1157,232 @@ em {
 }
 
 
+
+/* ===== Oferta: comparação entre planos ===== */
+
+.plan__head {
+  position: relative;
+}
+
+.plan__trust span {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .plan__head {
+    min-height: 116px;
+  }
+}
+
+.plan__for {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, .85);
+}
+
+.plan__badge {
+  position: absolute;
+  top: 22px;
+  right: clamp(24px, 3vw, 40px);
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--peach-light);
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.plan--plus .plan__name {
+  padding-right: 130px;
+}
+
+.plan__group--off .plan__group-title {
+  color: #A3ADAC;
+}
+
+.plan__group--off .plan__tag {
+  background: #EDEFEF;
+  color: #8A9594;
+}
+
+.plan__group--off .plan__list li {
+  color: #A3ADAC;
+  text-decoration: line-through;
+}
+
+.plan__group--off .plan__list li::before {
+  content: "×";
+  color: #A3ADAC;
+}
+
+.plan__trust {
+  margin: -12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--muted);
+}
+
+.plans__footer {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.plans__footer p {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(244, 241, 236, .92);
+}
+
+.plans__footer a {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===== 2b · Quem ensina ===== */
+
+.mentor-intro {
+  background: var(--cream);
+}
+
+.mentor-intro .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+}
+
+.mentor-intro__media {
+  flex: 0 1 380px;
+  min-width: 260px;
+  margin: 0 auto;
+}
+
+.mentor-intro__media img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 48px rgba(32, 48, 47, .2);
+}
+
+.mentor-intro__text {
+  flex: 1 1 440px;
+  min-width: 0;
+}
+
+.mentor-intro__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mentor-intro__list li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--body-text);
+}
+
+.mentor-intro__list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--coral);
+}
+
+.mentor-intro__list strong {
+  color: var(--teal);
+}
+
+.mentor-intro__link {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+/* ===== Atalhos fixos ===== */
+
+.wa-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+  transition: bottom .2s ease, transform .2s ease;
+}
+
+.wa-float:hover {
+  transform: scale(1.06);
+}
+
+.sticky-cta {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sticky-cta {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: #FFFFFF;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, .12);
+    transform: translateY(110%);
+    transition: transform .25s ease;
+  }
+
+  .sticky-cta__btn {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+
+  .sticky-cta-on .sticky-cta {
+    transform: translateY(0);
+  }
+
+  .sticky-cta-on .wa-float {
+    bottom: 92px;
+  }
+
+  body {
+    padding-bottom: 76px;
+  }
+
+  .wa-float {
+    right: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .plan__badge {
+    position: static;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .plan--plus .plan__name {
+    padding-right: 0;
+  }
+}

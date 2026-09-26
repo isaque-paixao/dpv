@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
@@ -53,6 +53,26 @@
     <div class="problem__callout">
       <p class="problem__callout-text">Quando você tem processo, a meta deixa de ser sorte e vira consequência.</p>
       <a href="#oferta" class="btn">Quero montar meu processo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2b · QUEM ENSINA ===== -->
+<section class="mentor-intro">
+  <div class="wrap">
+    <div class="mentor-intro__media">
+      <img src="assets/fernanda-palco-2.jpg" alt="Fernanda Garcia no palco" loading="lazy">
+    </div>
+    <div class="mentor-intro__text">
+      <p class="section-eyebrow">Quem vai te ensinar</p>
+      <h2 class="section-title">Fernanda Garcia</h2>
+      <ul class="mentor-intro__list">
+        <li><strong>+10 anos</strong> em prospecção B2B no Brasil, América Latina e Europa</li>
+        <li>Ex-BDR sênior no Brasil e em empresa dos EUA, liderou times de prospecção ativa</li>
+        <li><strong>Milhares de pré-vendedores</strong> treinados e dezenas de empresas estruturadas</li>
+        <li>Hoje é <strong>Head de Dealflow na ABSeed Ventures</strong>, fundo focado em Software B2B</li>
+      </ul>
+      <a href="#mentora" class="mentor-intro__link">Conheça a história completa →</a>
     </div>
   </div>
 </section>
@@ -404,6 +424,7 @@
       <div class="plan">
         <div class="plan__head">
           <h3 class="plan__name">DPV</h3>
+          <p class="plan__for">Para quem quer aprender o método</p>
         </div>
         <div class="plan__body">
           <div class="plan__group">
@@ -411,11 +432,23 @@
             <ul class="plan__list">
               <li>Curso em vídeo completo DPV (~12h)</li>
               <li>Materiais de apoio com exercícios práticos</li>
+              <li>IA exclusiva de vendas</li>
               <li>Comunidade: grupo do WhatsApp</li>
               <li>Espaço para dúvidas na plataforma</li>
               <li>1 encontro mensal em grupo</li>
+              <li>Certificado de conclusão</li>
               <li class="plan__extra">Módulo Extra de Social Selling</li>
               <li class="plan__extra">Módulo Extra de IA em Vendas</li>
+            </ul>
+          </div>
+          <div class="plan__group plan__group--off" aria-label="Não incluso no DPV">
+            <p class="plan__group-title">Mentoria Fernanda Garcia <span class="plan__tag">Só no Plus</span></p>
+            <ul class="plan__list">
+              <li>1 mentoria individual de onboarding</li>
+              <li>2 mentorias individuais oficiais</li>
+              <li>Grupo exclusivo no WhatsApp</li>
+              <li>Desconto e créditos em ferramentas</li>
+              <li>Gravação de todos os Workshops</li>
             </ul>
           </div>
           <div class="plan__price">
@@ -423,11 +456,14 @@
             <p class="plan__price-alt">ou <strong>R$ 497</strong> à vista</p>
           </div>
           <a href="https://chk.eduzz.com/c57pr7el" class="btn plan__btn">Quero o DPV</a>
+          <p class="plan__trust">7 dias de garantia · Acesso imediato<span>Pagamento seguro via Eduzz</span></p>
         </div>
       </div>
       <div class="plan plan--plus">
         <div class="plan__head">
           <h3 class="plan__name">DPV <span>Plus</span></h3>
+          <p class="plan__for">Para quem quer acompanhamento individual da Fernanda</p>
+          <span class="plan__badge">Mais completo</span>
         </div>
         <div class="plan__body">
           <div class="plan__group">
@@ -435,9 +471,11 @@
             <ul class="plan__list">
               <li>Curso em vídeo completo DPV (~12h)</li>
               <li>Materiais de apoio com exercícios práticos</li>
+              <li>IA exclusiva de vendas</li>
               <li>Comunidade: grupo do WhatsApp</li>
               <li>Espaço para dúvidas na plataforma</li>
               <li>1 encontro mensal em grupo</li>
+              <li>Certificado de conclusão</li>
               <li class="plan__extra">Módulo Extra de Social Selling</li>
               <li class="plan__extra">Módulo Extra de IA em Vendas</li>
             </ul>
@@ -457,8 +495,13 @@
             <p class="plan__price-alt">ou <strong>R$ 1.997</strong> à vista</p>
           </div>
           <a href="https://chk.eduzz.com/VWGZK1K407" class="btn plan__btn">Quero o DPV Plus</a>
+          <p class="plan__trust">7 dias de garantia · Acesso imediato<span>Pagamento seguro via Eduzz</span></p>
         </div>
       </div>
+    </div>
+    <div class="plans__footer">
+      <p>Pagamento via Pix, cartão de crédito em até 12x ou boleto.</p>
+      <p>Ficou em dúvida entre os planos? <a href="https://wa.me/5587996427165">Fala com a gente no WhatsApp</a></p>
     </div>
   </div>
 </section>
@@ -480,7 +523,7 @@
 </section>
 
 <!-- ===== 10 · MENTORA ===== -->
-<section class="mentor">
+<section class="mentor" id="mentora">
   <div class="wrap">
     <div class="mentor__media">
       <img src="assets/fernanda-palestra.jpg" alt="Fernanda Garcia palestrando em evento de vendas B2B">
@@ -507,7 +550,15 @@
     <div class="faq-list">
       <details class="faq-item">
         <summary><span class="faq-item__q">Por quanto tempo tenho acesso?</span><span class="faq-item__toggle">+</span></summary>
-        <p class="faq-item__a">1 ano de acesso completo: aulas, materiais, IA e comunidade.</p>
+        <p class="faq-item__a">Nos dois planos, você tem 1 ano de acesso completo: aulas, materiais, IA, comunidade e encontros mensais. No DPV Plus, você ainda tem 6 meses de mentoria com a Fernanda.</p>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-item__q">Qual a diferença entre DPV e DPV Plus?</span><span class="faq-item__toggle">+</span></summary>
+        <p class="faq-item__a">Os dois têm o curso completo, materiais, IA exclusiva, comunidade, encontros mensais, certificado e os módulos extras de Social Selling e IA em Vendas, com 1 ano de acesso. O DPV Plus soma 6 meses de mentoria com a Fernanda: 1 mentoria individual de onboarding, 2 mentorias individuais oficiais, grupo exclusivo no WhatsApp, desconto e créditos em ferramentas e a gravação de todos os Workshops.</p>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-item__q">Quais são as formas de pagamento?</span><span class="faq-item__toggle">+</span></summary>
+        <p class="faq-item__a">Pix, cartão de crédito em até 12x ou boleto, com pagamento seguro pela Eduzz.</p>
       </details>
       <details class="faq-item">
         <summary><span class="faq-item__q">Sou iniciante, o curso serve pra mim?</span><span class="faq-item__toggle">+</span></summary>
@@ -527,7 +578,7 @@
       </details>
       <details class="faq-item">
         <summary><span class="faq-item__q">Quanto tempo por semana eu preciso?</span><span class="faq-item__toggle">+</span></summary>
-        <p class="faq-item__a">As aulas são diretas. Em 6 horas você finaliza os conteúdos em vídeo.</p>
+        <p class="faq-item__a">São cerca de 12 horas de conteúdo em vídeo, em aulas curtas e diretas. Você assiste no seu ritmo e aplica enquanto avança.</p>
       </details>
       <details class="faq-item">
         <summary><span class="faq-item__q">Quando começo a ver resultado?</span><span class="faq-item__toggle">+</span></summary>
@@ -561,5 +612,29 @@
   </div>
 </section>
 
+<!-- Atalhos fixos: WhatsApp e barra de compra no celular -->
+<a href="https://wa.me/5587996427165" class="wa-float" aria-label="Fale com a gente no WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#FFFFFF" d="M16.04 3C9 3 3.3 8.7 3.3 15.74c0 2.25.59 4.450 1.71 6.38L3.2 29l7.06-1.78a12.7 12.7 0 0 0 5.78 1.4h.01c7.03 0 12.74-5.7 12.74-12.74C28.790 8.7 23.07 3 16.04 3Zm0 23.35h-.01c-1.9 0-3.77-.51-5.4-1.48l-.39-.23-4.19 1.06 1.12-4.08-.25-.42a10.56 10.56 0 0 1-1.62-5.62c0-5.85 4.76-10.6 10.61-10.6 2.83 0 5.49 1.1 7.5 3.11a10.53 10.53 0 0 1 3.1 7.5c0 5.85-4.76 10.6-10.6 10.6Zm5.82-7.94c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.18.21-.37.24-.69.08-.32-.16-1.34-.49-2.56-1.57-.94-.84-1.580-1.88-1.77-2.2-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.35-.26-.62-.52-.53-.71-.54h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65 0 1.56 1.14 3.07 1.3 3.28.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.27-.74.27-1.38.19-1.51-.08-.13-.29-.21-.61-.37Z"/></svg>
+</a>
+<div class="sticky-cta" aria-hidden="true">
+  <a href="#oferta" class="btn sticky-cta__btn" tabindex="-1">Ver opções · a partir de 12x R$ 51,40</a>
+</div>
+<script>
+  (function () {
+    var bar = document.querySelector('.sticky-cta');
+    var hero = document.querySelector('.hero');
+    var offer = document.getElementById('oferta');
+    if (!bar || !hero || !offer || !('IntersectionObserver' in window)) return;
+    var heroVisible = true, offerVisible = false;
+    function update() {
+      var show = !heroVisible && !offerVisible;
+      document.body.classList.toggle('sticky-cta-on', show);
+      bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      bar.querySelector('a').tabIndex = show ? 0 : -1;
+    }
+    new IntersectionObserver(function (e) { heroVisible = e[0].isIntersecting; update(); }).observe(hero);
+    new IntersectionObserver(function (e) { offerVisible = e[0].isIntersecting; update(); }).observe(offer);
+  })();
+</script>
 </body>
 </html>
